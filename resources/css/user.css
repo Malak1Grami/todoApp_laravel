@@ -1,0 +1,149 @@
+/* Variables */
+:root {
+    --primary: #39383b;
+    --primary-dark: #260064;
+    --danger: #e91e1e;
+    --nav-width: 300px;
+  }
+  
+  /* Global styles */
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .btn {
+    padding: 10px 35px;
+    border-radius: 300px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: var(--primary);
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+  
+  .btn-block {
+    width: 100%;
+  }
+  
+  .admin-main {
+    margin-left: var(--nav-width);
+    padding: 40px 25px;
+  }
+  
+  .admin-main .page-title {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* Side Navigation */
+  .side-nav {
+    background: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--nav-width);
+    padding: 40px 0;
+    color: #fff;
+  }
+  
+  .side-nav .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .side-nav .logo p {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+  }
+  
+  .side-nav .logo img {
+    height: 45px;
+    max-width: 100%;
+  }
+  
+  .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+    padding: 0 10px;
+  }
+  
+  .side-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #96929c;
+    border-radius: 3px;
+    font-weight: 200;
+    display: flex;
+    transition: all 0.1s ease;
+  }
+  
+  .side-nav ul li a:hover {
+    background: #fff;
+    color: var(--primary);
+    font-weight: 500;
+    transform: skewX(-15deg);
+  }
+  
+  .side-nav .logout button {
+    background: rgba(255, 0, 0, 0.34);
+    border: 1px solid rgba(255, 255, 122, 0.48);
+    position: absolute;
+    left: 35%;
+    /* button: 15px; */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 200px;
+    font-size: 12px;
+    transition: all 0.4s ease;
+    font-weight: 300;
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+  .side-nav .logout button:hover {
+    background: var(--danger);
+  }
+
+ 
+  .page-name {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+}
+
+
+
+
+
+
