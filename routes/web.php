@@ -32,15 +32,16 @@ Route::delete('/task/{id}', [TaskController::class,'destroy'])->name('destroy.ta
 
 Route::put('/{id}', [TaskController::class,'completeTask'])->name('complete.task')->middleware('auth'); 
 
-
+Route::get('/completedTask', [TaskController::class,'completed_tasks'])->name('completed_tasks')->middleware('auth');
+Route::get('/active', [TaskController::class,'active_tasks'])->name('active_tasks')->middleware('auth');
 
 Route::group( ['prefix'=>'home','middleware' =>'auth'],function() {
     // get pages
     
     Route::get('/create', [TaskController::class,'create'])->name('create.task'); 
     Route::get('/{id}', [TaskController::class,'edit'])->name('edit.task');
-    // Route::get('/completedTask', [TaskController::class,'completed_tasks'])->name('completed_tasks'); 
-    // Route::get('/active', [TaskController::class,'active_tasks'])->name('active_tasks'); 
+    //  
+    //  
     // back
     Route::post('/create', [TaskController::class,'store'])->name('store.task');
    

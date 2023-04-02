@@ -2,12 +2,15 @@
 @section('title','Edit task')
 @section('content')
 
-<h1 class="page-title"> Edit task</h1>
+
 
 
 <div class="container">
     <div class="row mb-5">
         <div class="col-md-9 offset-3">
+            <br><br>
+            <h1 class="page-title"> Edit task</h1>
+            <br><br>
             <div class="card">
                 <div class="card-header">
                     <h5>

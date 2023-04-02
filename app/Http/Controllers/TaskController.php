@@ -27,8 +27,11 @@ class TaskController extends Controller
 
         $user = Auth::user(); 
         
-        $tasks = Task::where('user_id', $user->id)->orderBy('date', 'desc')->get(); 
-        return view('tasks.index', compact('user'),['tasks' => $tasks]);
+        $tasks = Task::where('user_id', $user->id)
+                ->where('completed', 1) // Tâches  terminées
+                ->orderBy('date', 'desc')
+                ->get(); 
+                return view('tasks.completedTask', compact('user'),['tasks' => $tasks]);
         
     } 
 
@@ -38,8 +41,12 @@ class TaskController extends Controller
 
         $user = Auth::user(); // Get the currently authenticated user
         
-        $tasks = Task::where('user_id', $user->id)->orderBy('date', 'desc')->get(); 
-        return view('tasks.activeTasks', compact('user'),['tasks' => $tasks]);
+        $tasks = Task::where('user_id', $user->id)
+                ->where('completed', 0) // Tâches non terminées
+                ->orderBy('date', 'desc')
+                ->get(); 
+                
+    return view('tasks.activeTasks', compact('user'),['tasks' => $tasks]);
         
     } 
 

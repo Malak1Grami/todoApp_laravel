@@ -2,13 +2,16 @@
 @section('title','All tasks')
 @section('content')
 
-<h1 class="page-title">All tasks</h1>
+
 
 <div class="container">
     
     
     <div class="row">
         <div class="col-md-9 offset-3">
+            <br><br>
+            <h1 class="page-title">All tasks</h1>
+            <br><br>
             <div class="card">
                 <div class="card-header">
                     <h5>Tasks</h5>

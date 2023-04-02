@@ -2,11 +2,14 @@
 @section('name','create task')
 @section('content')
 
-<h1 class="page-name">Create task</h1>
+
 
 <div class="container">
     <div class="row mb-3">
         <div class="col-md-9 offset-md-3">
+            <br><br>
+            <h1 class="page-name">Create task</h1>
+            <br><br>
             <div class="card">
                 <div class="card-header">
                     <h5>

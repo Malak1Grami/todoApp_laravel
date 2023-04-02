@@ -17,12 +17,13 @@
         <li>
             <a href="{{route('index')}}">All tasks</a>
         </li>
-        {{-- <li>
+        <li>
             <a href="{{route('active_tasks')}}">Active tasks</a>
         </li>
+        
         <li>
             <a href="{{route('completed_tasks')}}">Completed tasks</a>
-        </li> --}}
+        </li>
 
        
 
