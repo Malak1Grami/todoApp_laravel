@@ -125,12 +125,12 @@ class TaskController extends Controller
             
             
         ]);
-        // get exit product
+        // get exit
             $task=task::findOrFail($id);
 
         // store
 
-          // Update the product attributes
+          // Update the attributes
             $task->name= $request->name;
             $task->date = $request->date;
            
